@@ -12,6 +12,12 @@ describe("tests linearSearch", () => {
   test("linearSearch(4, [1, 2, 3]) === undefined", () => {
     expect(linearSearch(4, [1, 2, 3])).toBe(undefined);
   });
+  test("linearSearch('a', ['a', 'b', a']) === 'a'", () => {
+    expect(linearSearch('a', ['a', 'b', 'a'])).toBe(0);
+  });
+  test("linearSearch('A', ['a', 'b', a']) === 'A'", () => {
+    expect(linearSearch('A', ['a', 'b', 'a'])).toBe(undefined);
+  });
 });
 
 describe("tests globalLinearSearch", () => {
